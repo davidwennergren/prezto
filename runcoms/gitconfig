@@ -1,23 +1,15 @@
 [user]
-  name = Jonas Brusman
-  email = himynameisjonas@gmail.com
-[alias]
-  co = checkout
-  st = status
-  uncommit = reset --soft HEAD^
-  unpushed = !git log origin/`git symbolic-ref HEAD 2> /dev/null | awk -F"/" '{ print $3 }'`..
-  latest = for-each-ref --sort=-committerdate refs/heads --format='%(committerdate:relative)\t%(refname:short)'
+  name = David Wennergren
+  email = david@owen.se
 [color]
-  diff = auto
-  status = auto
   branch = auto
-  ui = 1
-[core]
-  excludesfile = /Users/jonas/.gitignore
-  autocrlf = input
-  quotepath = false
-[apply]
-  whitespace = nowarn
+  diff = auto
+  interactive = auto
+  status = auto
+[git-pair]
+  pattern = dev+%name+%name@teamtailor.com
+  authors = Jonas Brusman <jonas@teamtailor.com>
+  authors = David Wennergren <david@teamtailor.com>
 [help]
   autocorrect = 1
 [rerere]
